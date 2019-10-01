@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Community Events Board</title>
+    </head>
+    <body>
+      <h1>Community Events Board</h1>
+      <div class="event-list">
+        <ol>
+          {% for event in myquery %}
+            <li>{{ event.name }} - {{ event.date }}</li>
+          {% endfor %}
+        </ol>
+      </div>
+      <a href="/input">Add an Event</a>
+
+    </body>
+</html>
